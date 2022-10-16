@@ -1,0 +1,171 @@
+<!doctype html>
+
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/pricing/">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <title>Serviços e Planos - FrontEnders</title>
+    <!--Imagem ao lado esquerdo do título da página, na aba do navegador-->
+    <link rel="shortcut icon" href="Imagens/Icone-FrontEnders.png">    
+  </head>
+
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="check" viewBox="0 0 16 16">
+        <title>Check</title>
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+    </svg>
+
+    <!--Cabeçalho do site-->
+    <header class="cabecalho">
+      <!--alt foi colocado para descrição, caso a imagem não apareça, não carregue-->
+      <img class="cabecalho-imagem" src="Imagens/FrontEnders.png" alt="Logo da FrontEnders">
+      <!--Menu de navegação-->
+      <nav class="cabecalho-menu">
+        <!--Âncoras-->
+        <a class="cabecalho-menu-item" href="index.html">Home</a>
+        <a class="cabecalho-menu-item" href="#">Cadastro</a>
+        <a class="cabecalho-menu-item" href="#">Contatos</a>
+        <a class="cabecalho-menu-item" href="#">Login</a>
+      </nav>
+    </header>
+
+    <div class="cor-servicos-e-planos">
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 fw-normal">Serviços e Planos</h1>
+        <p class="conteudo-servicos-e-planos">O <i>Z-Bot</i> é o seu novo assistente de programação! Ele é um bot (robô) capaz de identificar erros no seu código (HTML, CSS e JS) de forma instantânea e lhe avisar imediatamente, sem que você perca tempo ou a cabeça rsrsrs, tentando descobrir onde esqueceu aquele <i>";"</i> por exemplo. Além disso, ele é capaz de sugerir melhorias para o seu código, com o objetivo que ele fique mais fluído, eficiente e sucinto. Está surpreso? É real, tudo isso que você leu acontecendo de forma dinâmica e em tempo real, com o <i>Z-Bot</i> se comunicando com você, conforme desenvolve seus códigos! Não perca tempo, escolha um dos planos da pré-venda abaixo e cadastre-se!</p>
+      </div>
+    </div>
+
+    <main class="planos">
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Basic</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">R$30<small>/mês</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>1 usuário por perfil</li>
+                <li>15 dias para testar, sem cobrança</li>
+                <li>Suporte por e-mail</li>
+                <li>Fidelidade de 12 meses</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-outline-primary">Cadastre-se</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Pro</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">R$75<small>/mês</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Até 3 usuários por perfil</li>
+                <li>30 dias para testar, sem cobrança</li>
+                <li>Suporte por e-mail e Whatsapp</li>
+                <li>Fidelidade de 06 meses</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Cadastre-se</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-bg-primary border-primary">
+              <h4 class="my-0 fw-normal">Premium</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">R$200<small>/mês</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Até 10 usuários por perfil</li>
+                <li>45 dias para testar, sem cobrança</li>
+                <li>Suporte por e-mail, Whatsapp e telefone 24h por dia.</li>
+                <li>Sem Fidelidade</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Cadastre-se</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="display-6 text-center mb-4"><b>Compare os Planos</b></h2>
+
+      <div class="table-responsive">
+        <table class="table text-center">
+          <thead>
+            <tr class="cor-texto-compare">
+              <th style="width: 34%;"></th>
+              <th style="width: 22%;">Basic</th>
+              <th style="width: 22%;">Pro</th>
+              <th style="width: 22%;">Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="cor-texto-compare">
+              <th scope="row" class="text-start">Anúncios</th>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="cor-texto-compare">
+              <th scope="row" class="text-start">Linux, Windows, Mac OS</th>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr class="cor-texto-compare">
+              <th scope="row" class="text-start">Logins Simultâneos</th>
+              <td></td>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            </tr>
+            <tr class="cor-texto-compare">
+              <th scope="row" class="text-start">Z-Bot Personalizável</th>
+              <td></td>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            </tr>
+            <tr class="cor-texto-compare">
+              <th scope="row" class="text-start">Acesso antecipado a novas atualizações</th>
+              <td></td>
+              <td></td>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            </tr>
+            <tr class="cor-texto-compare">
+              <th scope="row" class="text-start">Cancele Quando Quiser</th>
+              <td></td>
+              <td></td>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <!--Rodapé do site-->
+    <footer class="rodape">
+      <p class="rodape-paragrafo">2022 FrontEnders&copy All Rights Reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="JS/main.js"></script>
+    
+  </body>
+
+</html>

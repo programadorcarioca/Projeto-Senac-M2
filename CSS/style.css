@@ -6,6 +6,7 @@
     text-decoration: none;
 }
 
+/*Página home*/
 .cabecalho {
     background: #242424;
     display: flex;
@@ -32,6 +33,7 @@
 .cabecalho-menu-item {
     font-size: 23px;
     color: #00b7eb;
+    text-decoration: none;
 }
 
 .cabecalho-menu-item:hover {
@@ -154,4 +156,37 @@
     font-size: 15px;
     color: #00b7eb;
     padding: 80px;   
+}
+
+/*Página de serviços e planos*/
+
+.pricing-header {
+    max-width: 1000px;
+  }
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+    color: white;
+}
+
+.cor-servicos-e-planos {
+    background: #707070;
+    color: #00b7eb;
+    border-top: 0.4px solid #ffffff;
+}
+
+.planos {
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #707070;
+    color: #00b7eb;    
+}
+
+.conteudo-servicos-e-planos {
+    font-size: 22px;
+}
+
+.cor-texto-compare {
+    color: #00b7eb;
 }
