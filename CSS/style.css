@@ -1,0 +1,157 @@
+/*O * é utilizado para formatar todas tags do HTML, neste ponto anulo todas as pré configurações do navegador*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.cabecalho {
+    background: #242424;
+    display: flex;
+    /*ação: fileira*/
+    flex-direction: row;
+    align-items: center;
+    /*itens são distribuídos de forma uniforme, com margens iguais à esquerda e à direita, acima e abaixo também*/
+    justify-content: space-around;
+    padding: 0px;
+}
+
+.cabecalho-imagem {
+    height: 170px; 
+    width: 170px;
+    border: none;
+}
+
+.cabecalho-menu {
+    display: flex;
+    /*distância entre as âncoras, opções do menu*/
+    gap: 60px;
+}
+
+.cabecalho-menu-item {
+    font-size: 23px;
+    color: #00b7eb;
+}
+
+.cabecalho-menu-item:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.conteudo {     
+    /*colocar linha de divisão entre o cabeçalho e o conteúdo principal*/     
+    border-top: 0.4px solid #ffffff;
+    background: #707070;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;    
+    gap: 32px;
+    border-right: 0.4px solid #ffffff;
+}
+
+.conteudo-principal-escrito-titulo {
+    margin-top: 80px;
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: center;
+    font-size: 50px;
+    color: #09cffc;
+}
+
+.conteudo-principal-escrito-subtitulo01 {
+    font-size: 35px;
+    margin-right: 50px;
+    margin-left: 50px;
+    color: #09cffc;
+}
+
+.conteudo-principal-escrito-subtitulo02 {
+    text-align: justify;
+    font-size: 25px;
+    margin-right: 50px;
+    margin-left: 50px;
+    color: #09cffc;
+}
+
+@keyframes conteudo-principal-imagem {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 0; }
+}
+
+.conteudo-principal-imagem {
+    margin:auto; 
+    height: 300px;
+    width: 300px;
+    margin-bottom: 80px;
+    -webkit-animation: conteudo-principal-imagem .99s linear infinite;
+    -moz-animation: conteudo-principal-imagem .99s linear infinite;
+    -ms-animation: conteudo-principal-imagem .99s linear infinite;
+    -o-animation: conteudo-principal-imagem .99s linear infinite;
+    animation: conteudo-principal-imagem .99s linear infinite;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.conteudo-paragrafo-01 {
+    margin-top: 120px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 25px;
+    color: #09cffc;
+}
+
+.conteudo-paragrafo-02 {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 25px;
+    color: #09cffc;
+}
+
+.conteudo-principal-escrito-botao {
+    text-align: center;
+    font-size: 18px;
+    background-color: #000072;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: #e7e6f4;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.rodape {
+    bottom: 0;
+    width: 100%;
+    background: #242424;
+    border-top: 0.4px solid #ffffff;
+    align-items: center;   
+}
+
+.rodape-paragrafo{
+    text-align: center;
+    font-size: 15px;
+    color: #00b7eb;
+    padding: 80px;   
+}
