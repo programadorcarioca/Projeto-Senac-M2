@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+body {
+    height: 100vh;
+}
+
 /*Página home*/
 .cabecalho {
     background: #242424;
@@ -144,6 +148,8 @@
 }
 
 .rodape {
+    height: 140px;
+    left: 0;
     bottom: 0;
     width: 100%;
     background: #242424;
@@ -155,7 +161,7 @@
     text-align: center;
     font-size: 15px;
     color: #00b7eb;
-    padding: 80px;   
+    padding: 50px;
 }
 
 /*Página de serviços e planos*/
