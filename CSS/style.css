@@ -196,3 +196,12 @@ body {
 .cor-texto-compare {
     color: #00b7eb;
 }
+
+/*Pagina de Cadastro*/
+
+.formulario {
+    margin: 10%;
+    padding: 2%;
+    border: solid 5px black;
+    border-radius: 20px;
+}
