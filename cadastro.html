@@ -36,17 +36,18 @@
                     <form>
                         <!--Nome-->
                         <div class="group">
-                                  <label for="inputName">Nome</label>
-                                  <input class="form-control" type="text" placeholder="Input padrão">
+                                  <label for="inputName">Nome e Sobrenome</label>
+                                  <input class="form-control" type="text" placeholder="Nome e Sobrenome">
                                 </div>
                             
                         <!--E-mail-->
-                            <div class="row">
+                            
                               <div class="col">
                                 <label for="inputEmail">Email</label>
-                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email@dominio.com.br">
                               </div>
                               <!--Senha-->
+                              <div class="row">
                               <div class="col">
                                     <label for="inputFirstPassword">Senha</label>
                                     <input type="password" class="form-control" id="inputFirstPassword" placeholder="Senha">
@@ -57,35 +58,39 @@
                                 <!--Confirmar senha-->
                                 <div class="col">
                                         <label for="inputSecondPassword">Confirmar senha</label>
-                                        <input type="password" class="form-control" id="inputSecondPassword" placeholder="Senha">
+                                        <input type="password" class="form-control" id="inputSecondPassword" placeholder="Confirme sua senha">
                                         <small id="passwordHelpInline2" class="text-muted">
                                                 Deve ser identicada a senha anterior.
                                               </small>
                                       </div>
                                 </div>
-                            <!--Endereço-->
+                            <!--Rua-->
                             <div class="group">
-                              <label for="inputAddress">Endereço</label>
-                              <input type="text" class="form-control" id="inputAddress" placeholder="Rua e Número">
+                              <label for="inputAddress">Rua</label>
+                              <input name="rua" type="text" id="rua" class="form-control" size="60" />
                             </div>
+                            <!--Bairro-->
+                            <div class="row">
+                              <div class="col">
+                                <label for="inputCity">Bairro</label>
+                                <input name="bairro" type="text" id="bairro" class="form-control" size="40" />
+                              </div>
                             <!--Cidade-->
                             <div class="row">
                               <div class="col">
                                 <label for="inputCity">Cidade</label>
-                                <input type="text" class="form-control" id="inputCity">
+                                <input name="cidade" type="text" id="cidade" class="form-control" size="40" /> 
                               </div>
                               <!--Estado-->
                               <div class="col">
                                 <label for="inputEstado">Estado</label>
-                                <select id="inputEstado" class="form-control">
-                                  <option selected>Escolher...</option>
-                                  <option>...</option>
-                                </select>
+                                <input name="uf" type="text" id="uf" class="form-control" size="2" />
                               </div>
                               <!--CEP-->
                               <div class="col">
                                 <label for="inputCEP">CEP</label>
-                                <input type="text" class="form-control" id="inputCEP">
+                                  <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                                         onblur="pesquisacep(this.value);"  class="form-control" /><br />
                               </div>
                             </div>
                             <!--Botão de lembrar-->
@@ -100,7 +105,7 @@
                             <!--Submit-->
                             <button type="submit" class="btn btn-primary">Entrar</button>
                           </form>
-                
+            
             </div>       
         
     </main>
@@ -109,7 +114,9 @@
     <footer class="rodape">
         <p class="rodape-paragrafo">2022 FrontEnders&copy All Rights Reserved</p>
     </footer>
+    
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+ <script type="text/javascript" src="JS/main.js"></script>
     
 </body>
 
