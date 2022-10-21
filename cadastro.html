@@ -31,7 +31,10 @@
     <!--Parte principal do site-->
     <main class="conteiner">
         <!--Seções dentro da parte principal do site-->
-        
+        <div class = "tituloCadastro">
+          <h1>Cadastre-se</h1>
+          <h3></h3>
+        </div>
             <div class="formulario">
                     <form>
                         <!--Nome-->
@@ -64,19 +67,16 @@
                                               </small>
                                       </div>
                                 </div>
-                            <!--Rua-->
-                            <div class="group">
-                              <label for="inputAddress">Rua</label>
-                              <input name="rua" type="text" id="rua" class="form-control" size="60" />
-                            </div>
-                            <!--Bairro-->
-                            <div class="row">
+                                
+                            
+                              <!--CEP-->
+                              <div class="row">
                               <div class="col">
-                                <label for="inputCity">Bairro</label>
-                                <input name="bairro" type="text" id="bairro" class="form-control" size="40" />
-                              </div>
-                            <!--Cidade-->
-                            <div class="row">
+                                  <label for="inputCEP">CEP</label>
+                                    <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                                           onblur="pesquisacep(this.value);"  class="form-control" /><br />
+                                </div>
+                                <!--Cidade-->
                               <div class="col">
                                 <label for="inputCity">Cidade</label>
                                 <input name="cidade" type="text" id="cidade" class="form-control" size="40" /> 
@@ -86,22 +86,29 @@
                                 <label for="inputEstado">Estado</label>
                                 <input name="uf" type="text" id="uf" class="form-control" size="2" />
                               </div>
-                              <!--CEP-->
-                              <div class="col">
-                                <label for="inputCEP">CEP</label>
-                                  <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
-                                         onblur="pesquisacep(this.value);"  class="form-control" /><br />
-                              </div>
                             </div>
-                            <!--Botão de lembrar-->
+                                
+                            <!--Rua-->
+                            <div class="group">
+                              <label for="inputAddress">Rua, número e complemento</label>
+                              <input name="rua" type="text" id="rua" class="form-control" size="60" />
+                            </div>
+                            <!--Bairro-->
+                            
+                              <div class="col">
+                                <label for="inputCity">Bairro</label>
+                                <input name="bairro" type="text" id="bairro" class="form-control" size="40" />
+                              </div>
+                            <br>
+                            <!--Botão de aceite de termo-->
                             <div class="group">
                               <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="gridCheck">
                                 <label class="form-check-label" for="gridCheck">
-                                  Clique em mim
+                                  Aceito o termo
                                 </label>
                               </div>
-                            </div>
+                            <br>
                             <!--Submit-->
                             <button type="submit" class="btn btn-primary">Entrar</button>
                           </form>
