@@ -200,8 +200,16 @@ body {
 /*Pagina de Cadastro*/
 
 .formulario {
-    margin: 10%;
+    
+    margin: 2%;
     padding: 2%;
     border: solid 5px black;
     border-radius: 20px;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+.tituloCadastro {
+    text-align: center;
+    padding: 2%;
+
 }
