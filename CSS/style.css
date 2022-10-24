@@ -305,3 +305,14 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/*Pagina de contato*/
+.row {
+    padding: 2%;
+    margin: 10%;
+}
+
+.col{
+justify-content: space-evenly;
+
+}
