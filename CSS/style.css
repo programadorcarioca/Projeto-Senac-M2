@@ -331,15 +331,27 @@ h3 {
 }
 
 /*Pagina de contato*/
-.row {
-   text-align: center;
-    margin: 5%;
-    width: 100%;
-    padding: 30px;
+.caixa {
     background: white;
     border-radius: 5px;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    
+    padding: 30px;
 }
+.colunas {
+    display: flex;
+    text-align: center;
+    
+    background: white;
+    
+   
 
+}
 .col{
 justify-content: space-evenly;
 
