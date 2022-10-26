@@ -332,12 +332,12 @@ h3 {
 
 /*Pagina de contato*/
 .row {
-    text-align: center;
+   text-align: center;
     margin: 5%;
     width: 100%;
-        padding: 30px;
-        background: white;
-        border-radius: 5px;
+    padding: 30px;
+    background: white;
+    border-radius: 5px;
 }
 
 .col{
