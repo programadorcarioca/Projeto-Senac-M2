@@ -213,6 +213,30 @@ body {
     padding: 2%;
 
 }
+.group {
+    display: flex;
+    justify-content: space-evenly;
+}
+h1 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+.formCadastro {
+        width: 70%;
+        padding: 30px;
+        background: white;
+        border-radius: 5px;
+    
+}
+.conteiner {
+    background: #707070;
+    padding: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /*Pagina de Login*/
 
