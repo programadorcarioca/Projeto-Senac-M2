@@ -332,11 +332,21 @@ h3 {
 
 /*Pagina de contato*/
 .row {
-    padding: 2%;
-    margin: 10%;
+    text-align: center;
+    margin: 5%;
+    width: 100%;
+        padding: 30px;
+        background: white;
+        border-radius: 5px;
 }
 
 .col{
 justify-content: space-evenly;
 
+}
+h2 {
+    text-align: center;
+}
+p {
+    text-align: center;
 }
