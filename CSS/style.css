@@ -352,13 +352,19 @@ h3 {
    
 
 }
+
 .col{
 justify-content: space-evenly;
-
+    padding: 15px;
+    margin: 2px;
+    border-radius: 12px;
+    border: black solid
 }
+
 h2 {
     text-align: center;
 }
 p {
     text-align: center;
+    white-space: pre;
 }
