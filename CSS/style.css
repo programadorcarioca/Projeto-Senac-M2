@@ -353,7 +353,7 @@ h3 {
 
 }
 
-.col{
+.colu{
 justify-content: space-evenly;
     padding: 15px;
     margin: 2px;
@@ -364,7 +364,8 @@ justify-content: space-evenly;
 h2 {
     text-align: center;
 }
-p {
+cargo {
     text-align: center;
     white-space: pre;
+    
 }
