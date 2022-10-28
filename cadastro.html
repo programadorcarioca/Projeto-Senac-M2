@@ -11,25 +11,32 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="CSS/style.css">    
-    <title>FrontEnders</title>
-    <!--Imagem ao lado esquerdo do título da página, na aba do navegador-->
-    <link rel="shortcut icon" href="Imagens/Icone-FrontEnders.png">
+
+  <title>FrontEnders</title>
+  <!--Imagem ao lado esquerdo do título da página, na aba do navegador-->
+  <link rel="shortcut icon" href="Imagens/Icone-FrontEnders.png">
+  
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
 
 <body>
     <!--Cabeçalho do site-->
-    <header class="cabecalho">
-        <!--alt foi colocado para descrição, caso a imagem não apareça, não carregue-->
-        <img class="cabecalho-imagem" src="Imagens/FrontEnders.png" alt="Logo da FrontEnders">
-        <!--Menu de navegação-->
-        <nav class="cabecalho-menu">
-            <!--Âncoras-->
-            <a class="cabecalho-menu-item" href="index.html">Home</a>
-            <a class="cabecalho-menu-item" href="servicos-e-planos.html">Serviços e Planos</a>
-            <a class="cabecalho-menu-item" href="contato.html">Contatos</a>
-            <a class="cabecalho-menu-item" href="login.html">Login</a>
-        </nav>
+    <header id="header">
+      <div class="container-header">
+          <!--LOGO -->
+          <img id="logo" src="Imagens/FrontEnders.svg" href="index.html" alt="Logo da FrontEnders">
+          <!--MENU-->
+          <nav id="nav">
+              <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><span id="hamburger"></span></button>
+              <ul id="menu" role="menu">
+                  <li><a href="index.html">INÍCIO</a></li>
+                  <li><a href="cadastro.html">CADASTRO</a></li>
+                  <li><a href="contato.html">CONTATOS</a></li>
+                  <li><a href="servicos-e-planos.html">SERVIÇOS E PLANOS</a></li>
+                  <li><a href="login.html">LOGIN</a></li>
+              </ul>
+          </nav>
+      </div> 
     </header>
 
     <!--Parte principal do site-->

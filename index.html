@@ -1,59 +1,67 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <title>FrontEnders</title>
     <!--Imagem ao lado esquerdo do título da página, na aba do navegador-->
     <link rel="shortcut icon" href="Imagens/Icone-FrontEnders.png">
 </head>
-
 <body>
-    <!--Cabeçalho do site-->
-    <header class="cabecalho">
-        <!--alt foi colocado para descrição, caso a imagem não apareça, não carregue-->
-        <img class="cabecalho-imagem" src="Imagens/FrontEnders.png" alt="Logo da FrontEnders">
-        <!--Menu de navegação-->
-        <nav class="cabecalho-menu">
-            <!--Âncoras-->
-            <a class="cabecalho-menu-item" href="servicos-e-planos.html">Serviços e Planos</a>
-            <a class="cabecalho-menu-item" href="cadastro.html">Cadastro</a>
-            <a class="cabecalho-menu-item" href="contato.html">Contatos</a>
-            <a class="cabecalho-menu-item" href="login.html">Login</a>
-        </nav>
+<!--Cabeçalho do site-->
+    <header id="header">
+        <div class="container-header">
+            <!--LOGO -->
+            <img id="logo" src="Imagens/FrontEnders.svg" href="index.html" alt="Logo da FrontEnders">
+            <!--MENU-->
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><span id="hamburger"></span></button>
+                <ul id="menu" role="menu">
+                    <li><a href="index.html">INÍCIO</a></li>
+                    <li><a href="cadastro.html">CADASTRO</a></li>
+                    <li><a href="contato.html">CONTATOS</a></li>
+                    <li><a href="servicos-e-planos.html">SERVIÇOS E PLANOS</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </nav>
+        </div> 
     </header>
 
     <!--Parte principal do site-->
-    <main class="conteudo">
-        <!--Seções dentro da parte principal do site-->
-        <section class="conteudo-principal">
-            <div class="conteudo-principal-escrito">
-                <h1 class="conteudo-principal-escrito-titulo"><b>Está Chegando o <i>Z-Bot</i>!!!</b></h1>
-                <h2 class="conteudo-principal-escrito-subtitulo01">Nunca mais perca a cabeça por ter esquecido um <i>";"</i></h2>
-                <h3 class="conteudo-principal-escrito-subtitulo02">A <i>FrontEnders</i> está trazendo para você programador,<br>o seu mais novo aliado no mundo do desenvolvimento web:<br> o <i>Z-Bot</i>, seu assistente de programação.</h3>
-                <img class="conteudo-principal-imagem" src="Imagens/Z-Bot-Final.png" alt="Z-Bot">
+    <main class="conteudo-index">
+        <div class="container-conteudo">
+            <div class="principal-index">
+                <div class="container-img">
+                    <img class="z-bot-img" src="Imagens/Z-Bot-Final.png" alt="Z-Bot">
+                </div>
+                <div class="container-txt">
+                    <h1>ESTÁ CHEGANDO O <b>Z-BOT</b></h1>
+                    <h2>NUNCA MAIS PERCA A CABEÇA POR TER ESQUECIDO UM <i>";"</i></h2>
+                    <p>A <i>FrontEnders</i> está trazendo, para você programador, <b>o seu mais novo aliado no mundo do desenvolvimento web:</b> o <i>Z-Bot</i>, seu assistente de programação.</p>
+                    <div class="box-botoes">
+                        <div class="container-itens-box-botoes">
+                            <p class="txt-lado">Seja um dos primeiros a contar com o apoio do Z-Bot:</p>
+                            <ul class="botoes-intro">
+                                <li><a href="#" class="botao-secundario">PLANOS</a></li>
+                                <li><a href="#" class="botao-principal">CONTRATE</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="conteudo-secundario">
-                <h2 class="conteudo-paragrafo-01">Seja um dos primeiros a contar com o apoio do Z-Bot?</h2>
-                <h3 class="conteudo-paragrafo-02">Clique no botão abaixo e cadastre-se!</h3>
-                <a href="cadastro.html"><button class="conteudo-principal-escrito-botao" type="button"  >Cadastro</button></a>
-                <a href="servicos-e-planos.html"><button class="conteudo-principal-escrito-botao" type="button">Saiba mais</button></a>
-            </div>           
-        </section>
+        </div>
     </main>
 
-    <!--Rodapé do site-->
+    <!-- RODAPE -->
     <footer class="rodape">
-        <p class="rodape-paragrafo">2022 FrontEnders&copy All Rights Reserved</p>
+        <p class="rodape-paragrafo">2022 FrontEnders© All Rights Reserved</p>
     </footer>
 
-    <script type="text/javascript" src="JS/main.js"></script>
-    
-</body>
 
+    <script type="text/javascript" src="JS/main.js"></script>
+</body>
 </html>
